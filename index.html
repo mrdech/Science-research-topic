@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project nghiem tuc</title>
+    <!-- <link rel="stylesheet" href="../reset-css.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9f2b03f744.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+
+         <!-- here is header -->
+
+        <header class="header">
+
+            <div class="container__header">
+                <a href="" class="header__logo"><span>SaoĐỏ</span>University</a>
+                
+                <nav class="header__nav-bar">
+                    <div class="header__nav-bar-btn-menu"  onclick="showMenu()">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div id="header__nav-bar-menu" class="header__nav-bar-menu">
+                        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                        <ul>
+                            <li><a href="#" class="header__nav-item">Home</a></li>
+                            <li><a href="#" class="header__nav-item">Games</a></li>
+                            <li><a href="#" class="header__nav-item">Gallery</a></li>
+                            <li><a href="#" class="header__nav-item">About</a></li>
+                            <li><a href="#" class="header__nav-item">Contact</a></li>
+                        </ul>
+
+                        <p class="text__copyright">@Copyright by longdech</p>
+
+                    </div>
+                </nav>
+    
+                <div class="header__user">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="" class="header__nav-user">Login / Register</a>
+                </div>
+            </div>
+
+            <h3>Enter the keyword you want to find.</h3>
+
+            <div class="header__search-bar">
+                <form action="" class="header__search-bar-form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="Enter keyword...">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </form>
+            </div>
+            
+        </header>
+
+    </div>
+
+    <script>
+        let header__navBarMenu = document.getElementById("header__nav-bar-menu");
+
+        function showMenu() {
+            header__navBarMenu.style.left = "0";
+        }
+
+        function hideMenu() {
+            header__navBarMenu.style.left = "-50vw";
+        }
+    </script>
+</body>
+</html>
