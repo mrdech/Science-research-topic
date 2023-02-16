@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project nghiem tuc</title>
+    <!-- <link rel="stylesheet" href="../reset-css.css"> -->
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/9f2b03f744.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__logo">
+                <a href="index.html" class="header__logo"><span>SaoĐỏ</span>University</a>
+            </div>
+
+            <div class="header__close" onclick="location.href='index.html'">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="container__form">
+
+                <h1 id="login" class="login">Log in</h1>
+    
+                <form action="" class="form">
+    
+                    <div class="container__email-input">
+                        <div class="email-label">
+                            <label for="">Email</label>
+                            <p id="change__sign" class="email-login">Need an account? <span onclick="changeSign()">Sign up</span></p>
+                            <p id="change__log" class="email-signup">Already have an account? <span onclick="changelog()">Log in</span></p>
+
+                        </div>
+                        <input type="email" class="email-input">
+                    </div>
+    
+                    <div class="container__password-input">
+                        <div class="password-label">
+                            <label for="">Password</label>
+                            <div class="password__view">
+                                <i class="fa-sharp fa-regular fa-eye"></i>
+                                <i class="fa-regular fa-eye-slash"></i>
+                            </div>
+                        </div>
+                        <input type="password" class="password-input">
+                    </div>
+    
+                    <div id="check__password" class="check__password">
+                        <li>One lowercase character</li>
+                        <li>One uppercase character</li>
+                        <li>One number</li>
+                        <li>One special character</li>
+                        <li>8 characters minimum</li>
+                    </div>
+
+                    <div id="email-checkBox" class="email-checkBox">
+                        <input type="checkbox">
+                        <label for="">Email me with news and updates</label>
+                    </div>
+    
+                    <div class="container__btn-log-sign">
+                        <button id="btn__log-sign" class="btn__log-sign" type="submit">Log in</button>
+                        <a id="forget-password" href="">Forgot password?</a>
+                    </div>
+    
+                    <div id="sign-rivacy" class="sign-rivacy">
+                        By clicking the "Sign up for free" button, you are creating an account,
+                        and agree to W3Schools'<span>Terms of Service</span> and <span>Privacy Policy</span>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            © 2023 <a href=""><span>SaoDo</span>University</a>. All rights reserved. Cookie policy, Privacy and Terms.
+
+        </div>
+    </div>
+
+    <script>
+        function changeSign() {
+            document.getElementById("change__log").style.display="block";
+            document.getElementById("check__password").style.display="block";
+            document.getElementById("email-checkBox").style.display="block";
+            document.getElementById("sign-rivacy").style.display="block";
+            document.getElementById("forget-password").style.display="none";
+            document.getElementById("change__sign").style.display="none";
+            document.getElementById("btn__log-sign").innerHTML="Sign in";
+            document.getElementById("login").innerHTML="Sign in";     
+        }
+
+        function changelog() {
+            document.getElementById("change__log").style.display="none";
+            document.getElementById("check__password").style.display="none";
+            document.getElementById("email-checkBox").style.display="none";
+            document.getElementById("sign-rivacy").style.display="none";
+            document.getElementById("change__sign").style.display="block";   
+            document.getElementById("forget-password").style.display="block";
+            document.getElementById("login").innerHTML="Log in";
+            document.getElementById("btn__log-sign").innerHTML="Log in";
+        }
+
+    </script>
+</body>
+</html>
