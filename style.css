@@ -254,7 +254,7 @@
     }
     .header-bottom__search-bar input,
     .header-bottom__search-bar .fa-magnifying-glass {
-        display: block !important;
+        display: block;
     }
 }
 

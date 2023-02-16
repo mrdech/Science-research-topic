@@ -48,7 +48,7 @@
 
                 <div class="container__header-bottom">
                     <form action="" class="header-bottom__search-bar">
-                        <i class="fa-solid fa-magnifying-glass header__searchBar"></i>
+                        <div id="header__searchBar"><i class="fa-solid fa-magnifying-glass"></i></div>
                         <input type="search" placeholder="Enter your keywords...">
                     </form>
                 </div>
@@ -71,16 +71,20 @@
 
     <script>
         let header__navBarMenu = document.getElementById("header__nav-bar-menu");
-        let header__searchBar = document.getElementsByClassName("header__searchBar");
+        let header__searchBar = document.getElementById("header__searchBar");
 
         function showMenu() {
-            header__navBarMenu.style.left = "0",
+            header__navBarMenu.style.left = "0";
             header__searchBar.style.display = "none";
         }
 
         function hideMenu() {
             header__navBarMenu.style.left = "-100vw";
+            setTimeout(() => {
+                header__searchBar.style.display = "block";        
+            }, 300);   
         }
+
     </script>
 </body>
 </html>
