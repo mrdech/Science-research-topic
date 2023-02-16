@@ -17,34 +17,42 @@
         <header class="header">
 
             <div class="container__header">
-                <a href="" class="header__logo"><span>SaoĐỏ</span>University</a>
-                
-                <nav class="header__nav-bar">
-                    <div class="header__nav-bar-btn-menu"  onclick="showMenu()">
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-
-                    <div id="header__nav-bar-menu" class="header__nav-bar-menu">
-                        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-
-                        <ul>
-                            <li><a href="#" class="header__nav-item">Home</a></li>
-                            <li><a href="#" class="header__nav-item">Games</a></li>
-                            <li><a href="#" class="header__nav-item">Gallery</a></li>
-                            <li><a href="#" class="header__nav-item">About</a></li>
-                            <li><a href="#" class="header__nav-item">Contact</a></li>
-                        </ul>
-
-                        <p class="text__copyright">@Copyright by longdech</p>
-
-                    </div>
-                </nav>
+                <div class="container__header-top">
+                    <a href="" class="header__logo"><span>SaoĐỏ</span>University</a>
+                    
+                    <nav class="header__nav-bar">
+                      
+                        <i class="fa-solid fa-bars"  onclick="showMenu()"></i>
     
-                <div class="header__user">
-                    <i class="fa-solid fa-user"></i>
-                    <a href="" class="header__nav-user">Login / Register</a>
+                        <div id="header__nav-bar-menu" class="header__nav-bar-menu">
+                            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+    
+                            <ul>
+                                <li><a href="#" class="header__nav-item">Home</a></li>
+                                <li><a href="#" class="header__nav-item">Games</a></li>
+                                <li><a href="#" class="header__nav-item">Gallery</a></li>
+                                <li><a href="#" class="header__nav-item">About</a></li>
+                                <li><a href="#" class="header__nav-item">Contact</a></li>
+                            </ul>
+    
+                            <p class="text__copyright">@Copyright by longdech</p>
+    
+                        </div>
+                    </nav>
+        
+                    <div class="header__user">
+                        <i class="fa-solid fa-user"></i>
+                        <a href="" class="header__nav-user">Login / Register</a>
+                    </div>
                 </div>
+
+                <div class="container__header-bottom">
+                    <form action="" class="header-bottom__search-bar">
+                        <i class="fa-solid fa-magnifying-glass header__searchBar"></i>
+                        <input type="search" placeholder="Enter your keywords...">
+                    </form>
+                </div>
+
             </div>
 
             <div class="container__search-bar">
@@ -63,13 +71,15 @@
 
     <script>
         let header__navBarMenu = document.getElementById("header__nav-bar-menu");
+        let header__searchBar = document.getElementsByClassName("header__searchBar");
 
         function showMenu() {
-            header__navBarMenu.style.left = "0";
+            header__navBarMenu.style.left = "0",
+            header__searchBar.style.display = "none";
         }
 
         function hideMenu() {
-            header__navBarMenu.style.left = "-50vw";
+            header__navBarMenu.style.left = "-100vw";
         }
     </script>
 </body>
