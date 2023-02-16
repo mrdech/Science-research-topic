@@ -171,6 +171,26 @@
     display: none;
 }
 
+.other-login {
+    margin: 30px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.other-login .fa-brands {
+    font-size: 20px;
+    color: #3B5998;
+}
+
+.facebook-login,
+.google-login {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px 0;
+    max-width: 15vw;
+}
+
 @media (max-width: 940px) {
     .main {
         border: none;
@@ -180,6 +200,11 @@
 
     .container__form {
         padding: 0 8%;
+    }
+
+    .facebook-login,
+    .google-login {
+        max-width: 30vw;
     }
 }
 
