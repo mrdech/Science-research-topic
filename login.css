@@ -200,6 +200,7 @@
     padding: 8px 0;
     max-width: 10vw;
     min-width: 125px;
+    cursor: pointer;
 }
 
 @media (max-width: 940px) {
