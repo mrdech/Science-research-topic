@@ -79,7 +79,8 @@
 }
 
 .email-label p {
-    font-size: 13px;
+    font-size: 12px;
+    padding-top: 5px;
 }
 
 .email-label .email-signup {
