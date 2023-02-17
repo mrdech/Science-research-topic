@@ -182,25 +182,32 @@
 }
 
 .other-login {
-    margin: 30px 0 0;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .other-login .fa-brands {
     font-size: 20px;
-    color: #3B5998;
+    color: white;
+
 }
 
 .facebook-login,
 .google-login {
-    width: 100%;
-    background-color: white;
     border-radius: 10px;
-    padding: 8px 0;
-    max-width: 10vw;
-    min-width: 125px;
     cursor: pointer;
+    width: 40%;
+    padding: 8px 0;
+}
+
+.facebook-login {
+    background-color: #537fe7;
+}
+
+.google-login {
+    background-color: #f94a29;
 }
 
 @media (max-width: 940px) {
@@ -212,19 +219,6 @@
 
     .container__form {
         padding: 0 8%;
-    }
-
-    .facebook-login,
-    .google-login {
-        max-width: 30vw;
-    }
-}
-
-
-@media (min-width: 1500px) {
-    .facebook-login,
-    .google-login {
-        max-width: 150px;
     }
 }
 
