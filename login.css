@@ -220,6 +220,13 @@
 }
 
 
+@media (min-width: 1500px) {
+    .facebook-login,
+    .google-login {
+        max-width: 150px;
+    }
+}
+
 
 
 
